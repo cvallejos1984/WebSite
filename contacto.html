@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- JAM icons -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Contacto</title>
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- cabecera logo y menu de navegacion -->
+    <header class="main-header">
+      <div class="content-wrapper">
+        <a href="/">
+          <img src="/imagenes/ledezmalogo.jpg" alt="Logo Ledezma">
+        </a>
+        <span id="open-menu-button" class="jam jam-menu"></span>
+        <nav id="main-menu" class="main-menu">
+          <span id="close-menu-button" class="jam jam-close"></span>
+          <ul>
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="/quienes-somos.html">¿Quiénes somos?</a>
+            </li>
+            <li>
+              <a href="/proyectos.html">Proyectos</a>
+            </li>
+            <li>
+              <a href="/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>    
+    <main class="main">
+      <section class="contact-section section-container ">
+        <h1>Contacto</h1>
+        <div class="content-wrapper">
+       <div>
+            <h3>Ingresa tus datos</h3>
+            <div class="content-wrapper form-content">
+               <form class="form" name="contact" method="POST" data-netlify="true">
+                <div class="form-item">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" name="user_name"/>
+                </div>
+                <div class="form-item">
+                  <label for="email"  >Correo</label>
+                  <input type="email" id="email" name="user_email"/>
+                </div>
+                <div  class="form-item">
+                  <label for="tel">Telefono</label>
+                  <input type="tel" id="tel" name="user_tel"/>
+                </div>
+                <div  class="form-item">
+                  <label for="msg" >Comentario </label>
+                  <textarea id="msg" name="user_message" maxlength="300"></textarea>
+                </div>
+                <div class="form-item">
+                  <button class="button" type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+    
+          <address>
+            <div class="contact-item">
+              <h4>Teléfono</h4>
+              <p>
+                <span class="jam jam-phone"></span>
+                <a href="tel:50671141587">(506) 7114-1587</a>
+              </p>
+            </div>
+      
+            <div class="contact-item">
+              <h4>Correo electrónico</h4>
+              <p>
+                <span class="jam jam-newsletter"></span>
+                <a href="mailto:cesledezma@gmail.com">cesledezma@gmail.com</a>
+              </p>
+            </div>
+      
+            <div class="contact-item">
+              <h4>Redes sociales</h4>
+              <div class="social-networks">
+                <a href="#"><span class="jam jam-twitter"></span></a>
+                <a href="https://www.facebook.com/Servicio-Automotriz-Ledezma-110271290332164/"><span class="jam jam-facebook"></span></a>
+                <a href="https://api.whatsapp.com/send?phone=50671141587&text=Quiero%20información"><span class="jam jam-whatsapp"></span></a>
+                <a href="#"><span class="jam jam-instagram"></span></a>
+              </div>
+            </div>
+      
+            <div class="contact-item">
+              <h4>Dirección</h4>
+              <p>
+                <span class="jam jam-map-marker"></span>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.272091385027!2d-84.18780868538457!3d9.994368592855036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f913dd7a158d%3A0x7787978ac6d5b901!2sServicio%20Automotriz%20Ledezma!5e0!3m2!1ses-419!2scr!4v1603921486545!5m2!1ses-419!2scr">
+                  La Ribera de Belén 50 metros <br>
+                  Oeste de las oficinas centrales<br>
+                  de Pipasa Heredia Belén
+                </a>
+              </p>
+            </div> 
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.272091385027!2d-84.18780868538457!3d9.994368592855036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f913dd7a158d%3A0x7787978ac6d5b901!2sServicio%20Automotriz%20Ledezma!5e0!3m2!1ses-419!2scr!4v1604422041569!5m2!1ses-419!2scr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </address>
+        
+        </div>
+      </section>
+      <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=50671141587&text=Quiero%20información" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+        </a>
+        </div>
+    </main>
+    <footer class="main-footer">
+      <p>Todos los derechos reservados © 2020 </br> Servicio Automotriz Ledezma</p>
+    </footer>
+    <script src="/scripts/menu.js"></script>
+</body>
+</html>

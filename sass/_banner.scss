@@ -1,0 +1,74 @@
+/* ----- BANNER PRINCIPAL ----- */
+
+.main-banner {
+    display    : flex;
+    background : var(--primary-color);
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .main-banner {
+      min-height : 500px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    .main-banner {
+      text-align : center;
+      padding    : 2rem 0;
+    }
+  
+  }
+  
+  .main-banner .content {
+    display : grid;
+    gap     : 2rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .main-banner .content {
+      grid-template-columns : 1fr 1fr;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .main-banner .container {
+      display         : flex;
+      flex-direction  : column;
+      justify-content : center;
+    }
+  
+    .main-banner .container:last-of-type {
+      align-items : center;
+    }
+  
+  }
+  
+  .main-banner .title {
+    color         : var(--white-color);
+    margin-bottom : 1rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+  
+    .main-banner .title {
+      text-align : left;
+    }
+  
+  }
+  
+  .main-banner .subtitle {
+    margin-bottom : 1.5rem;
+    font-size     : var(--big-font-size);
+    color         : var(--white-color);
+    opacity       : 0.7;
+  }
+  
+  .main-banner .image {
+    width : 80%;
+  }
